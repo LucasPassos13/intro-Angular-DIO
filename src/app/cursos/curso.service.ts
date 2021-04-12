@@ -9,6 +9,17 @@ export class CursoService{
     retriveAll(): Curso[]{
         return COURSES;
     }
+
+    retriveById(id: number): Curso{
+        return COURSES.find((courseIterator: Curso) =>  courseIterator.id === id);   
+    }
+
+    save(course: Curso){
+        if(course.id){
+            const index = COURSES.findIndex((courseIterator: Curso) =>  courseIterator.id === course.id);  
+            COURSES[index]= course;
+        }
+    }
 }
 
 var COURSES: Curso[] = [
