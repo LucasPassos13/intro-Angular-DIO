@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "curso-dio"
+  "defaultProject": "curso-dio",
+  "cli": {
+    "analytics": "325c0f6b-2f12-46e3-91d1-c39e39255a09"
+  }
 }
